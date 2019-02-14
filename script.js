@@ -1,7 +1,9 @@
 var scene = new THREE.Scene();
+// only one scene in three.js
         
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-        
+// camera determinate which objects display, differ from scene, three.js has many cameras.
+
 var renderer = new THREE.WebGLRenderer();
         
 renderer.setSize(window.innerWidth, window.innerHeight);
